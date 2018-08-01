@@ -1,3 +1,3 @@
 Project: Rock, paper, scissors. 
 
-michaeljpigott.github.io/rps
+https://michaeljpigott.github.io/rps/
