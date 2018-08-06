@@ -1,15 +1,29 @@
+<!doctype html>
 <html>
-  <script>
-    function computerPlay() {
-      var computerChoice = Math.floor(Math.random) * 3); 
-        
-        if (computerChoice === 0) {
-          return 'rock'
-        } elseif (computerChoice === 1) {
-          return 'paper'
-        } elseif (computerChoice === 3) {
-          return 'scissors'
-        }
-    }
-  </script>
+  <head>
+  <meta charset="utf-8">
+  <title>Rock, paper, scissors</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+		<meta name="viewport" content="width=device-width">
+	
+  </head>
+  <body>
+		<div id="header"></div>
+		<div id="game-button-area">
+			<div id="game-buttons-central-area">
+				<div id="game-buttons">
+					<button class="button button1" id="Rock">Rock</button><button class="button button2" id="paper">Paper</button><button class="button button3" id="scissors">Scissors</button>
+				</div>
+			</div>
+		</div>
+		<div id="round-result-area">
+			<div id="round-results">
+				<p id="computer-choice"></p>
+				<p id="result"></p>
+			</div>
+		</div> 
+		<script type="text/javascript" src="custom.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</body>
 </html>

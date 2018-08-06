@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+}
+#header {
+	width: 100%;
+	height: 102px;
+	background-color: rgb(232, 106, 92);
+}
+
+#game-button-area {
+	width: 100%;
+	padding: 50px 0 50px 0;
+}
+
+#round-result-area {
+	width: 100%;
+	height: 200px;
+}
+
+#round-results {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#computer-choice {
+	color: black;
+	font-size: 20px;
+	font-family: 'Arvo', serif;
+}
+
+#result {
+	color: black;
+	font-size: 40px;
+	font-family: 'Arvo', serif;
+}
+
+
+#game-buttons-central-area{
+	width: 100%;
+	
+}
+
+#game-buttons {
+	margin: auto;
+	width: 100%;
+}
+/*button styling*/
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+	  width: 32.5%;
+    padding: 16px 0 16px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+	 	margin: 2px 3px 2px 0;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+		margin: 2px 3px 2px 0;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+		margin: 2px 2px 2px 0px;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+		margin: 2px 2px 2px 0px;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+		margin: 2px 2px 2px 0;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+		margin: 2px 2px 2px 0;
+}
+
+
+/*---------------------------------------------End of button styling--------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------Full screen settings--------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+	#game-button-area {
+		max-width: 780px;
+		margin:auto;
+	}
+	
+	#game-buttons-central-area, #round-results {
+		width: 50%; 
+		margin:auto;
+	}
+	/*button styling*/
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+		width: 30%;
+    /*padding: 16px */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+	
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+		margin: 2px 4% 2px 0;
+}
+	
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+	  margin: 2px 4% 2px 0;
+}
+	
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+		margin: 2px 4% 2px 0;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+		margin: 2px 4% 2px 0;
+}
+	
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+		margin: 2px 0 2px 0;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+		margin: 2px 0 2px 0;
+		
+}
+
+	/*---------------------------------------------End of button stylings ---------------------------------------------*/
+	
+}
