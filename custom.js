@@ -38,10 +38,10 @@ window.onload = function(){
 
 	var win = "You win\! ";
 	var lose = "You lose\! ";
-	var draw = "It's a draw\. "
+	var draw = "It's a draw\. ";
 	var paperCoversRock = "Paper covers rock.";
 	var rockBluntsScissors = "Rock blunts scissors.";
-	var scissorsCutsPaper = "Scissors cut paper."
+	var scissorsCutsPaper = "Scissors cut paper.";
 
 
 	//Player scores-------------------------------------------------------------
@@ -78,40 +78,40 @@ window.onload = function(){
 		//console.log("Computer selection all caps: " + computerSelectionAllCaps);
 
 
-		if (computerSelectionAllCaps == "ROCK") {
-			if (playerSelectionAllCaps == "ROCK") {
-				return draw
-			} else if (playerSelectionAllCaps == "PAPER") {
+		if (computerSelectionAllCaps === "ROCK") {
+			if (playerSelectionAllCaps === "ROCK") {
+				return draw;
+			} else if (playerSelectionAllCaps === "PAPER") {
 				winScore();
 				return win + paperCoversRock;
 
-			} else if (playerSelectionAllCaps == "SCISSORS") {
-				loseScore()
+			} else if (playerSelectionAllCaps === "SCISSORS") {
+				loseScore();
 				return lose + rockBluntsScissors;
 			}
 
 			//Computer selection == paper
-		} else if (computerSelectionAllCaps == "PAPER") {
-			if (playerSelectionAllCaps == "ROCK") {
-				loseScore()
+		} else if (computerSelectionAllCaps === "PAPER") {
+			if (playerSelectionAllCaps === "ROCK") {
+				loseScore();
 				return lose + paperCoversRock;
-			} else if (playerSelectionAllCaps == "PAPER") {
-				return draw
+			} else if (playerSelectionAllCaps === "PAPER") {
+				return draw;
 			} else {
 				winScore();
 				return win + scissorsCutsPaper;
 			}
 
 			//Computer selection == scissors
-		} else if (computerSelectionAllCaps == "SCISSORS") {
-			if (playerSelectionAllCaps == "ROCK") {
+		} else if (computerSelectionAllCaps === "SCISSORS") {
+			if (playerSelectionAllCaps === "ROCK") {
 				winScore();
 				return win + rockBluntsScissors;
-			} else if (playerSelectionAllCaps == "PAPER") {
+			} else if (playerSelectionAllCaps === "PAPER") {
 				loseScore();
 				return lose + scissorsCutsPaper;
 			} else {
-				return draw
+				return draw;
 			}
 
 		}
@@ -127,15 +127,19 @@ var roundCount = 1;
 		var computerSelection = computerPlay();
 		
 		if (roundCount < 6) { 
-			document.getElementById("computer-choice").innerHTML = "Computer's choice: " + computerSelection;
-			//console.log("Computer: " + computerSelection);
+			document.getElementById("instructions").style.display = "none";
 			document.getElementById("result").innerHTML = (playRound(playerButton, computerSelection));
-			//console.log
-			console.log("Player's score: " + playerScore);
-			console.log("Computer's score: " + computerScore);
-			console.log("Round count: " + roundCount);
-			console.log("-------------------------------------------------------------------------------------------");
-			roundCount++;
+			if (roundCount < 5) {
+				document.getElementById("round-id").innerHTML = "Round " + roundCount;
+				document.getElementById("computer-choice").innerHTML = "Computer's choice: " + computerSelection;
+				document.getElementById("round-result-area").style.display = "block";
+			} else {
+				document.getElementById("round-result-area").style.display = "none";
+				document.getElementById("game-results").style.display = "block";
+			}
+		document.getElementById("your-score-number").innerHTML = playerScore;
+		document.getElementById("computer-score-number").innerHTML = computerScore;
+		roundCount++;
 		}
 
 		

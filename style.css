@@ -2,41 +2,62 @@
 /* CSS Document */
 
 body {
-	margin: 0;
+	margin: 0 0 1em 0;
 }
+
+/*Text styles---------------------------------------*/
+
+h1 {
+	margin: 0px;
+	padding: 20px 0 0 0;
+	color: #FFF;
+	font-family: 'Pacifico', cursive;
+}
+
+h2 {
+	margin: 0; 
+	color: #FFF;
+	padding: 0 0 7px;
+	font-family: 'Arvo', serif;
+	font-size: 2em;
+}
+
+p {
+	font-family: 'Arvo', serif;
+	margin: 1em;
+	
+}
+
+/*Header--------------------------------------------*/
+
 #header {
 	width: 100%;
 	height: 102px;
 	background-color: rgb(232, 106, 92);
+	text-align: center;
+	margin: 0; 
+	
+
 }
+
+/*End of header area---------------------------------*/
+
+/*Footer---------------------------------------------*/
+
+#footer{
+	width: 100%;
+	height: 102px;
+	background-color: rgb(232, 106, 92);
+	clear:both;
+	margin: 0 0 0 0;
+}
+
+/*Button area--------------------------------------- */
 
 #game-button-area {
 	width: 100%;
 	padding: 50px 0 50px 0;
 }
-
-#round-result-area {
-	width: 100%;
-	height: 200px;
-}
-
-#round-results {
-	text-align: center;
-	padding-top: 10px;
-}
-
-#computer-choice {
-	color: black;
-	font-size: 20px;
-	font-family: 'Arvo', serif;
-}
-
-#result {
-	color: black;
-	font-size: 40px;
-	font-family: 'Arvo', serif;
-}
-
 
 #game-buttons-central-area{
 	width: 100%;
@@ -45,16 +66,74 @@ body {
 
 #game-buttons {
 	margin: auto;
-	width: 100%;
+	/*width: 100%;*/
 }
+
+/*End of game button area-----------------------------*/
+
+
+/*Instruction area-------------------------------------*/
+#instructions {
+	text-align: center;
+	padding: 0 0 20px 0;
+	min-height: 183px;
+	font-size: 1.3em;
+}
+
+/*End of instructions area-----------------------------*/
+
+/*Round result area-----------------------------------*/
+
+h2#round-id {
+	color: #000;
+}
+
+#round-result-area {
+	width: 100%;
+	/*height: 200px;*/
+	display: none;
+}
+
+#round-results {
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 0 10px 0;
+}
+
+#computer-choice {
+	color: black;
+	font-size: 1.5em;
+	font-family: 'Arvo', serif;
+}
+
+#result {
+	color: black;
+	font-size: 2.5em;
+	font-family: 'Arvo', serif;
+}
+
+/*End of round result area------------------------------------------*/
+
+/*Game result area--------------------------------------------------*/
+
+#game-results {
+	display: none;
+	text-align: center;
+	font-size: 2.5em;
+}
+
+#game-results p {
+	margin: .3em 1em 1em 1em;
+}
+
 /*button styling*/
 
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
+		width: 31.7%;
     color: white;
-	  width: 32.5%;
-    padding: 16px 0 16px 0;
+	  padding: 16px 0 16px 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -66,7 +145,7 @@ body {
 
 .button1 {
     background-color: white; 
-    color: black; 
+	  color: black; 
     border: 2px solid #4CAF50;
 	 	margin: 2px 3px 2px 0;
 }
@@ -107,12 +186,60 @@ body {
 /*---------------------------------------------End of button styling--------------------------------------------------------------------*/
 
 
+/*Scoreboard----------------------------------------------------------------------------------------------------------------------------*/
+
+#scoreboard {
+		width: 100%;
+		margin: 10px 0 0px 0;
+		padding: 10px 0 10px 0;
+		min-height: 200px;
+		background-color: #000;
+}
+
+#score-heading {
+	text-align: center;
+	width: 100%; 
+	background-color: #000;
+	padding: 30px 0 10px 0;
+}
+
+#your-score {
+	width: 50%;
+	float: left; 
+	display: inline-block;
+	text-align: center;
+	background-color: #000;
+	text-transform: uppercase;
+	color: #FFF;
+	}
+
+
+
+#computer-score {
+	width: 50%;
+	float: right; 
+	display: inline-block;
+	text-align: center;
+	background-color: #000;
+	text-transform: uppercase;
+	color: #FFF;
+	
+}
+
+
+span#your-score-number, span#computer-score-number {
+	font-family: 'Orbitron', sans-serif;
+	color: #FF4136;
+	font-size: 1.8em;
+}
 
 
 /*---------------------------------------------Full screen settings--------------------------------------------------------------------*/
 
 @media only screen and (min-width: 768px) {
-/* For desktop: */
+
+	/* For desktop: ------------------------------------------------------------------------*/
+	
 	#game-button-area {
 		max-width: 780px;
 		margin:auto;
@@ -122,7 +249,11 @@ body {
 		width: 50%; 
 		margin:auto;
 	}
-	/*button styling*/
+	
+/*
+	
+	
+/*button styling----------------------------------------------------------------*/
 
 .button {
     background-color: #4CAF50; /* Green */
