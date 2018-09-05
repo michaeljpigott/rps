@@ -141,9 +141,21 @@ var roundCount = 1;
 		document.getElementById("computer-score-number").innerHTML = computerScore;
 		roundCount++;
 		}
+		if (playerScore > computerScore) {
+			document.getElementById("end-of-game-message").innerHTML = "You win!"; 
+			document.getElementById("end-of-game-score").innerHTML = playerScore + " games to " + computerScore; 
+		} else if (playerScore === computerScore) {
+			document.getElementById("end-of-game-message").innerHTML = "It's a draw!"; 		
+			document.getElementById("end-of-game-score").innerHTML = playerScore + " games each."; 
+		}
+		else   {
+			document.getElementById("end-of-game-message").innerHTML = "You lose! ";
+			document.getElementById("end-of-game-score").innerHTML = computerScore + " games to " + playerScore;
+		}
 
 		
 
 	}
+
 }
 

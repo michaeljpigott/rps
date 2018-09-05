@@ -8,23 +8,29 @@
 <meta name="viewport" content="width=device-width">
 </head>
 <body>
-	<div id="header"><h1>Scissors, paper, rock</h1></div>
+	<div id="header"><h1>Rock, paper, scissors</h1></div>
 <div id="game-button-area">
   <div id="game-buttons-central-area">
     <div id="game-buttons">
-			<button class="button button3" id="scissors">Scissors</button>
-      <button class="button button2" id="paper">Paper</button>
 			<button class="button button1" id="Rock">Rock</button>
+			<button class="button button2" id="paper">Paper</button>
+			<button class="button button3" id="scissors">Scissors</button>
       </div>
   </div>
 </div>
 	<div id="instructions"><p>Play the game by clicking on the buttons. It's the best out of five rounds.</p></div>
-	<div id="game-results"><p>Game over!</p></div>
+	<div id="game-results">
+		<p>Game over!</p>
+		<p id="end-of-game-message"></p>
+		<p id="end-of-game-score"></p>
+		<button class="button button4" id="play-again-button" onClick="window.location.reload()"><strong>Play again?</strong></button>
+	</div>
 <div id="round-result-area">
   <div id="round-results">
 		<h2 id="round-id"></h2>
     <p id="computer-choice"></p>
     <p id="result"></p>
+		
   </div>
 </div>
 <div id="scoreboard">
@@ -43,7 +49,14 @@
     </div>
   </div>
 </div>
-<div id="footer"></div>
+	<div id="footer">
+		<div class="github-logo">
+			<a href="https://github.com/michaeljpigott">
+				<p class="footer-image"><img src="images/logo-github.png"></p>
+				<p class="footer-text">GitHub</p>
+				</a>
+		</div>
+	</div>
 <script type="text/javascript" src="custom.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Arvo|Orbitron|Pacifico" rel="stylesheet">
 </body>

@@ -19,12 +19,12 @@ h2 {
 	color: #FFF;
 	padding: 0 0 7px;
 	font-family: 'Arvo', serif;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 
 p {
 	font-family: 'Arvo', serif;
-	margin: 1em;
+	margin: .2em;
 	
 }
 
@@ -52,12 +52,29 @@ p {
 	margin: 0 0 0 0;
 }
 
+.footer-text {
+	color: #fff; 
+	font-weight: bold;
+	
+}
+
+.github-logo :link {
+	text-decoration: none;
+}
+
+.github-logo {
+	padding: 1em 0 0 1em;
+	text-align: center;
+}
+
 /*Button area--------------------------------------- */
 
 #game-button-area {
 	width: 100%;
-	padding: 50px 0 50px 0;
+	padding: 10px 0 10px 0;
+	
 }
+
 
 #game-buttons-central-area{
 	width: 100%;
@@ -75,9 +92,10 @@ p {
 /*Instruction area-------------------------------------*/
 #instructions {
 	text-align: center;
-	padding: 0 0 20px 0;
-	min-height: 183px;
+	padding: 40px 0 40px 0;
+	min-height: 90px;
 	font-size: 1.3em;
+	margin: 10px 0 10px 0;
 }
 
 /*End of instructions area-----------------------------*/
@@ -97,18 +115,19 @@ h2#round-id {
 #round-results {
 	text-align: center;
 	padding-top: 10px;
+	padding: 40px 0 40px 0;
 	margin: 0 0 10px 0;
 }
 
 #computer-choice {
 	color: black;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-family: 'Arvo', serif;
 }
 
 #result {
 	color: black;
-	font-size: 2.5em;
+	font-size: 1.6em;
 	font-family: 'Arvo', serif;
 }
 
@@ -120,10 +139,11 @@ h2#round-id {
 	display: none;
 	text-align: center;
 	font-size: 2.5em;
+	padding: 40px 0 40px 0;
 }
 
 #game-results p {
-	margin: .3em 1em 1em 1em;
+	margin: .3em .3em .3em .3em;
 }
 
 /*button styling*/
@@ -182,6 +202,15 @@ h2#round-id {
 		margin: 2px 2px 2px 0;
 }
 
+.button4 { 
+ 		background-color: #3A344E; 
+    color: #fff; 
+    border: 2px solid transparent;
+		margin: auto;
+		border-radius: 1000px;
+		max-width: 33rem;
+}
+
 
 /*---------------------------------------------End of button styling--------------------------------------------------------------------*/
 
@@ -190,9 +219,9 @@ h2#round-id {
 
 #scoreboard {
 		width: 100%;
-		margin: 10px 0 0px 0;
-		padding: 10px 0 10px 0;
-		min-height: 200px;
+		margin: 0px 0 0px 0;
+		padding: 0 0 10px 0;
+		min-height: 120px;
 		background-color: #000;
 }
 
@@ -200,7 +229,7 @@ h2#round-id {
 	text-align: center;
 	width: 100%; 
 	background-color: #000;
-	padding: 30px 0 10px 0;
+	padding: 10px 0 10px 0;
 }
 
 #your-score {
